@@ -1,0 +1,140 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="0" started-at="2019-10-10T09:15:55Z" finished-at="2019-10-10T09:15:55Z">
+    <groups>
+    </groups>
+  </suite> <!-- Suite -->
+  <suite name="Suite (1)" duration-ms="35500" started-at="2019-10-10T09:15:18Z" finished-at="2019-10-10T09:15:53Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="35500" started-at="2019-10-10T09:15:18Z" finished-at="2019-10-10T09:15:53Z">
+      <class name="${package}.testscripts.HeroImage">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="startReport" is-config="true" duration-ms="12" started-at="2019-10-10T09:15:18Z" finished-at="2019-10-10T09:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="baseSetup()[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="baseSetup" is-config="true" duration-ms="11377" started-at="2019-10-10T09:15:18Z" finished-at="2019-10-10T09:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method status="PASS" signature="validateHeroImage([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="validateHeroImage" duration-ms="23402" started-at="2019-10-10T09:15:29Z" data-provider="productdata" finished-at="2019-10-10T09:15:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@44f3fe83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHeroImage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="tearDown" is-config="true" duration-ms="336" started-at="2019-10-10T09:15:53Z" finished-at="2019-10-10T09:15:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateHeroImage status=SUCCESS method=HeroImage.validateHeroImage([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="validateHeroImage([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="validateHeroImage" duration-ms="0" started-at="2019-10-10T09:15:53Z" data-provider="productdata" finished-at="2019-10-10T09:15:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@44c5a16f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHeroImage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="tearDown" is-config="true" duration-ms="324" started-at="2019-10-10T09:15:53Z" finished-at="2019-10-10T09:15:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateHeroImage status=SUCCESS method=HeroImage.validateHeroImage([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:${package}.testscripts.HeroImage@31a5c39e]" name="endReport" is-config="true" duration-ms="1152" started-at="2019-10-10T09:15:53Z" finished-at="2019-10-10T09:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- ${package}.testscripts.HeroImage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (1) -->
+  <suite name="Suite (0)" duration-ms="24294" started-at="2019-10-10T09:14:52Z" finished-at="2019-10-10T09:15:16Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24294" started-at="2019-10-10T09:14:52Z" finished-at="2019-10-10T09:15:16Z">
+      <class name="${package}.testscripts.WelcomePage">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="startReport" is-config="true" duration-ms="268" started-at="2019-10-10T09:14:52Z" finished-at="2019-10-10T09:14:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="baseSetup()[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="baseSetup" is-config="true" duration-ms="12122" started-at="2019-10-10T09:14:52Z" finished-at="2019-10-10T09:15:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method status="PASS" signature="validateKonakart([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="validateKonakart" duration-ms="7888" started-at="2019-10-10T09:15:05Z" data-provider="welcomedata" finished-at="2019-10-10T09:15:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@841e575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateKonakart -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="tearDown" is-config="true" duration-ms="404" started-at="2019-10-10T09:15:13Z" finished-at="2019-10-10T09:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateKonakart status=SUCCESS method=WelcomePage.validateKonakart([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="validateKonakart([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="validateKonakart" duration-ms="2471" started-at="2019-10-10T09:15:14Z" data-provider="welcomedata" finished-at="2019-10-10T09:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@27a5328c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateKonakart -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="tearDown" is-config="true" duration-ms="348" started-at="2019-10-10T09:15:16Z" finished-at="2019-10-10T09:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateKonakart status=SUCCESS method=WelcomePage.validateKonakart([Ljava.lang.String;)[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:${package}.testscripts.WelcomePage@343f4d3d]" name="endReport" is-config="true" duration-ms="1414" started-at="2019-10-10T09:15:16Z" finished-at="2019-10-10T09:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- ${package}.testscripts.WelcomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
+</testng-results>

@@ -1,0 +1,46 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${package}.pages;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import ${package}.helper.ActionHelper;
+import ${package}.helper.ValidaterHelper;
+import ${package}.logreports.LogReporter;
+
+public class KonakartPage {
+	LogReporter log=new LogReporter();
+	ActionHelper help=new ActionHelper();
+	ValidaterHelper validate=new ValidaterHelper();
+	public void konakartValidate(WebDriver driver,Properties prop,String[] data) {
+		validate.validateTitle(driver,data[0]);
+		help.dropDown(prop.getProperty("loc.dropdown.ecom"), driver, Integer.parseInt(data[4]));
+		String temp=data[1]+","+data[2]+","+data[3];
+		String[] temparray=temp.split(",");
+		recursiveMethod(driver,prop,data[5],temparray);
+	}
+	public void recursiveMethod(WebDriver driver,Properties prop,String option,String[] temparray)
+	{
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		help.sendKeys(prop.getProperty("loc.txtfield.search"), driver, option);
+		help.clickElement(prop.getProperty("loc.btn.search"), driver);
+		WebElement element=driver.findElement(By.xpath(prop.getProperty("loc.container.root")));
+		String[] countString=element.getText().split("${symbol_escape}n");
+		if(countString.length>1) {
+		WebElement prodelement=driver.findElement(By.xpath(prop.getProperty("loc.panel.konakartproduct.xpath")));
+		String[] elementarray=prodelement.getText().split("${symbol_escape}n");
+		int count=0;
+		for(String string:elementarray) {
+			validate.assertValidate(string, temparray[count]);
+			count++;
+		}
+		}else {
+		WebElement emptyelement=driver.findElement(By.xpath(prop.getProperty("loc.txt.prodnotavailabe.xpath")));
+			validate.assertValidate(emptyelement.getText(), "There are no available products.");	
+		}
+		}
+}
